@@ -6,9 +6,9 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Code a Tune</title>
-	<link id='style' rel="stylesheet" href="/css/styles/atelier-forest-dark.css">
-	<link href="css/tailwind.min.css" rel="stylesheet">
-	<link href="css/style.css" rel="stylesheet">
+	<link href="/css/tailwind.min.css" rel="stylesheet">
+	<link href="/css/styles/atelier-forest-dark.css" rel="stylesheet" id="style">
+	<link href="/css/style.css" rel="stylesheet">
 </head>
 
 <body class="dark:bg-gray-800 relative">
@@ -20,7 +20,8 @@
 
 			<div class="flex">
 				<div class="relative md:block">
-					<select title="Theme" class="text-gray-900 font-medium text-base rounded-md focus:ring-blue-500 focus:border-blue-500 block w-full md:py-2.5 py-2 px-2 dark:bg-gray-200 dark:text-gray-800"
+					<select title="Theme"
+						class="text-gray-900 font-medium text-base rounded-md focus:ring-blue-500 focus:border-blue-500 block w-full md:py-2.5 py-2 px-2 dark:bg-gray-200 dark:text-gray-800"
 						onchange="sss('css/styles/'+this.value);">
 						<option value="a11y-dark.css">A11Y DARK</option>
 						<option value="a11y-light.css">A11Y LIGHT</option>
@@ -130,6 +131,7 @@
 
 	<!-- Content -->
 	<div class="grid grid-cols-1 gap-2 md:grid-cols-2 px-2 py-2 md:py-4">
+		<!-- left section -->
 		<div class="wrapper flex rounded-lg overflow-hidden">
 			<div class='hljs flex-none h-full' id="number">
 				<span>1</span>
@@ -137,14 +139,13 @@
 			<div class='hljs flex-1 h-full' id='code' contentEditable="true">
 			</div>
 		</div>
-
 		<!-- right section -->
 		<div class='hljs text-white wrapper flex flex-col rounded-lg ' id='output'>
 			<!-- Chords -->
 			<div class="flex-none pb-4">
 				<span
 					class="javascript text-xl bg-gray-100 text-gray-700 font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-gray-200 dark:text-gray-800 inline-block mb-2">Chords</span>
-				<div id='output1' class='hljs flex justify-start p-4 rounded-lg keys-wrapper'>
+				<div id='output1' class='hljs overflow-auto flex justify-start p-4 rounded-lg keys-wrapper'>
 				</div>
 			</div>
 
@@ -152,7 +153,7 @@
 			<div class="flex-2">
 				<span
 					class="javascript text-xl bg-gray-100 text-gray-700 font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-gray-200 dark:text-gray-800 inline-block mb-2">Keys</span>
-				<div id='output2' class='hljs flex justify-start p-4 rounded-lg keys-wrapper'>
+				<div id='output2' class='hljs overflow-auto flex justify-start p-4 rounded-lg keys-wrapper'>
 				</div>
 			</div>
 		</div>
@@ -170,11 +171,10 @@
 			onclick="kgf()">bgm</button>
 	</div>
 
-	<script src="js/libs/highlight.js">hljs.initHighlightingOnLoad();</script>
-	<script src="js/higlight.js"></script>
-	<script src="js/footer.js"></script>
-	<script src="./js/prefix/kgf.js"></script>
-	<script src="./js/libs/oscci.js"></script>
-	<script src="./js/logic.js"></script>
-	<!-- <script src="https://cdn.tailwindcss.com"></script> -->
+	<script src="/js/libs/highlight.js"></script>
+	<script src="/js/higlight.js"></script>
+	<script src="/js/prefix/kgf.js"></script>
+	<script src="/js/libs/oscci.js"></script>
+	<script src="/js/logic.js"></script>
+	<script>hljs.highlightAll();</script>
 </body>

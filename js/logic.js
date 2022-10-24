@@ -76,45 +76,7 @@ y.forEach(n=>{
 
 id('output1').innerHTML = out
 id('output2').innerHTML = uot
-footer={
-  '0': {
-    url: 'https://facebook.com/ieeeceksb',
-    img: 'fb.png',
-    alt: 'facebook-logo'
-  },
-  '1': {
-    url: 'https://instagram.com/ieee_sb_cek',
-    img: 'ista.png',
-    alt: 'instagram-logo'
-  },
-  '2': {
-    url: 'https://twitter.com/IEEE_SB_CEK',
-    img: 'twit.png',
-    alt: 'twitter-logo'
-  },
-  '3': {
-    url: 'https://www.linkedin.com/company/ieeesbcek',
-    img: 'lin.png',
-    alt: 'linkedin-logo'
-  }
-}
 
 function len(obj){
   return Object.keys(obj).length
 }
-
-function footers(a){
-  return `
-      <a href="${a.url}">
-          <img class='social' src="imgs/social/${a.img}" alt="${a.alt}">  
-      </a>
-    `
-}
-function genFooter(){
-  for(i=0;i<len(footer);i++)
-  $('footer').innerHTML+=footers(footer[i])
-  $('footer').innerHTML+='<p class="copyright">Made with &#10084 <br> IEEE SB CEK © 2022</p>'
-}
-
-genFooter()
-

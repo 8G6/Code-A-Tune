@@ -44,33 +44,20 @@ h1 {
 
 .keys-wrapper {
   border: 1px solid rgb(145, 139, 128);
+  display: flex;
 }
 
 .keys-wrapper button {
   background: rgb(228, 227, 227);
-  padding: 20px;
+  padding: 10px;
   color: #222;
   border-right: 1px solid rgb(145, 139, 128);
-  border-radius: 5px;
+  border-radius: 4px ;
 }
 
 .keys-wrapper button:hover {
   background: rgb(189, 189, 189);
 }
-
-/* 
-.social {
-    width: 30px;
-    height: 30px;
-    margin: 1%;
-    filter: drop-shadow(2px 2px 2px rgb(12, 139, 112));
-}
-
-.social:hover {
-    filter: drop-shadow(2px 2px 5px rgb(240, 238, 241));
-}
-
-*/
 
 @media screen and (max-width:992px) {
   .wrapper {

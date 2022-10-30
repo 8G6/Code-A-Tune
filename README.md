@@ -1,3 +1,7 @@
+<div align="center">
+    <img src="images/icon.png">
+</div>
+
 # Code A Tune
 A web application for having fun with code and music. 
 <br>
@@ -84,6 +88,8 @@ We welcome all kinds of positive contributions helping us to improve and grow th
 If you wish to contribute, you can work on any issues [listed here](https://github.com/8G6/Code-A-Tune/issues) or create one on your own. After adding your code, please send us a Pull Request.
 
 
+<br>
+Logo icon by [Amandeep Singh](https://github.com/adsingh14/)
 <br>
 <hr>
 	
